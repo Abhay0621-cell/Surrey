@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  background: #f7f7f2;
+  color: #202b27;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-image:
+  linear-gradient(rgba(247, 247, 242, 0.85), rgba(247, 247, 242, 0.85)),
+  url("images/surrey.jpg");
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+
+.site-header,
+footer {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 25px;
+}
+
+a {
+  color: #437c60;
+}
+
+.site-header a,
+footer a {
+  text-decoration: none;
+}
+
+.hero,
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 50px 20px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, serif;
+}
+
+.hero h1 {
+  font-size: 48px;
+}
+
+.photo-frame {
+  height: 350px;
+  overflow: hidden;
+}
+
+.photo-frame img {
+  width: 80%;
+  height: 120%;
+  object-fit: cover;
+}
+
+.welcome,
+.feature-grid,
+.place-list,
+.contact-form,
+.page-heading {
+  margin: 30px 20px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.feature-card,
+.place,
+.student-card {
+  padding: 20px;
+  border: 1px solid #e1e3de;
+}
+
+.button,
+.contact-form button {
+  display: inline-block;
+  padding: 12px 18px;
+  background: #2f5546;
+  color: white;
+  border: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 18px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 650px) {
+  .hero,
+  .contact-layout,
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-header {
+    align-items: flex-start;
+    gap: 12px;
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+}
+
+  .button,
+button {
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.button:hover,
+button:hover {
+  background-color: #1e3a2e;
+  transform: translateY(-2px);
+}
+
+.button:active,
+button:active {
+  transform: translateY(1px);
+}
+
+.button:focus-visible,
+button:focus-visible {
+  outline: 3px solid #369770;
+}
+
+a:hover {
+  color: #2f5546;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+  
